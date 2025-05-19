@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Plumbing Laval - Professional Plumbing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600566752227-8f3b1a105971?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .map-container {
+            height: 400px;
+            width: 100%;
+        }
+        .quote-box {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-snowflake text-2xl mr-2 text-blue-300"></i>
+                <h1 class="text-2xl font-bold">Arctic Plumbing <span class="text-blue-300">Laval</span></h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                <a href="#about" class="hover:text-blue-300 transition">About</a>
+                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                <a href="tel:4509244144" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition flex items-center">
+                    <i class="fas fa-phone mr-2"></i> (450) 924-4144
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800 px-4 py-2">
+            <div class="flex flex-col space-y-3">
+                <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                <a href="#about" class="hover:text-blue-300 transition">About</a>
+                <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                <a href="tel:4509244144" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition text-center">
+                    <i class="fas fa-phone mr-2"></i> (450) 924-4144
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Reliable Plumbing Services in Laval</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">24/7 emergency services with fast response times and guaranteed satisfaction.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="tel:4509244144" class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-full text-lg font-semibold transition">
+                Call Now <i class="fas fa-phone ml-2"></i>
+            </a>
+            <a href="#quote" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-semibold transition">
+                Get a Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-2">Our Plumbing Services</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pipe Repair & Installation</h3>
+                    <p class="text-gray-600">Expert pipe repair and installation services for residential and commercial properties.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-toilet"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Drain Cleaning</h3>
+                    <p class="text-gray-600">Fast and effective drain cleaning services to prevent clogs and backups.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Water Heater Services</h3>
+                    <p class="text-gray-600">Installation, repair, and maintenance of all types of water heaters.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Leak Detection</h3>
+                    <p class="text-gray-600">Advanced leak detection technology to find and fix hidden leaks.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bathroom Plumbing</h3>
+                    <p class="text-gray-600">Complete bathroom plumbing services including sink, shower, and toilet installations.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Emergency Services</h3>
+                    <p class="text-gray-600">24/7 emergency plumbing services for urgent plumbing issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Professional plumber working on pipes" 
+                         class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-4">About Arctic Plumbing Laval</h2>
+                    <p class="text-gray-600 mb-4">Arctic Plumbing Laval has been serving the Laval community with top-quality plumbing services for over 15 years. Our team of licensed and experienced plumbers is committed to providing reliable, efficient, and affordable solutions for all your plumbing needs.</p>
+                    <p class="text-gray-600 mb-6">We pride ourselves on our professionalism, attention to detail, and commitment to customer satisfaction. Whether you need a simple repair or a complete plumbing system installation, you can count on Arctic Plumbing Laval to get the job done right.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-check-circle text-blue-600 mr-2"></i>
+                            <span>Licensed & Insured</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-clock text-blue-600 mr-2"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+                            <i class="fas fa-thumbs-up text-blue-600 mr-2"></i>
+                            <span>Guaranteed Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="quote-box rounded-xl p-8 md:p-12 text-white text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Get a Quote Today!</h2>
+                <p class="text-xl mb-8">Call us directly for a fast and accurate quote on any plumbing service. Our friendly staff is ready to assist you.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="tel:4509244144" class="bg-white text-blue-900 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition flex items-center justify-center">
+                        <i class="fas fa-phone mr-2 text-xl"></i> Call (450) 924-4144
+                    </a>
+                </div>
+                <p class="mt-6 text-blue-200">Available 24/7 for emergency services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-2">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Arctic Plumbing fixed my burst pipe in the middle of winter. They arrived within an hour and had the problem solved quickly. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="font-semibold">- Marc Tremblay</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Professional, punctual, and fair pricing. They installed a new water heater for us and did an excellent job. Will definitely call them again for any plumbing needs."</p>
+                    <div class="flex items-center">
+                        <div class="font-semibold">- Sophie Gagnon</div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The team at Arctic Plumbing was amazing. They cleared our clogged drain and explained everything they were doing. Very knowledgeable and friendly."</p>
+                    <div class="flex items-center">
+                        <div class="font-semibold">- Jean-Luc Dubois</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Contact Us</h2>
+                <div class="w-20 h-1 bg-blue-300 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 mx-auto">
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Address</h4>
+                                <p>1760 Boul. le Corbusier, Laval, QC H7S 2K1</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-blue-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p>(450) 924-4144</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>info@arcticplumbinglaval.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-blue-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Hours</h4>
+                                <p>24/7 Emergency Services Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Service Area</h3>
+                        <p>We proudly serve Laval and surrounding areas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-xl font-semibold mb-4 text-center">Our Location</h3>
+                <div class="map-container rounded-lg shadow-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.245121119116!2d-73.74435092370007!3d45.52324397107299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5c1b6d3a4d%3A0x7b6b3a5b2b5b3b5b!2s1760%20Boul.%20le%20Corbusier%2C%20Laval%2C%20QC%20H7S%202K1!5e0!3m2!1sen!2sca!4v1689876543210!5m2!1sen!2sca" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-s snowflake text-2xl mr-2 text-blue-300"></i>
+                        <h2 class="text-xl font-bold">Arctic Plumbing Laval</h2>
+                    </div>
+                    <p class="text-gray-400 mt-1">Professional plumbing services in Laval</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© 2023 Arctic Plumbing Laval. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm mt-1">Licensed, Bonded & Insured</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button (Mobile) -->
+    <div class="fixed bottom-6 right-6 md:hidden">
+        <a href="tel:4509244144" class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
